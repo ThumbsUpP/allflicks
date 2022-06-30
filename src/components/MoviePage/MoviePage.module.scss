@@ -1,0 +1,94 @@
+.movie-page {
+    & > a {
+        &:visited,
+        &:link {
+            text-decoration: none;
+        }
+
+        & .back-button {
+            all: unset;
+            cursor: pointer;
+            font-weight: 300;
+            color: white;
+        }
+    }
+
+    & .hero {
+        display: flex;
+        flex-direction: column;
+
+        @media only screen and (min-width: 501px) {
+            flex-direction: row;
+        }
+
+        & .cover-wrapper {
+            height: 200px;
+
+            @media only screen and (min-width: 501px) {
+                height: auto;
+            }
+
+            & .backdrop {
+                background-repeat: no-repeat;
+                opacity: 0.4;
+                width: 100vw;
+                height: 200px;
+                position: absolute;
+                left: 0;
+
+                @media only screen and (min-width: 500px) {
+                    display: none;
+                }
+            }
+
+            & img {
+                position: absolute;
+                height: 180px;
+                margin: 10px 30px 10px 0;
+                border-radius: 10px;
+
+                @media only screen and (min-width: 501px) {
+                    position: initial;
+                    height: auto;
+                }
+            }
+        }
+    }
+
+    & .score-card {
+        margin: 15px auto 0;
+        width: 58px;
+        height: 58px;
+        border-radius: 50%;
+        padding: 4px;
+        background-color: green;
+
+        @media only screen and (min-width: 501px) {
+            margin: 15px 0;
+        }
+
+        & .rating {
+            position: relative;
+            width: 36px;
+            text-align: center;
+            top: 6px;
+            left: 11px;
+            font-size: 22px;
+            font-weight: 700;
+
+            & p {
+                margin: 0;
+                font-size: 11px;
+                font-weight: 400;
+            }
+        }
+    }
+
+    & .ok {
+        background-color: orange;
+    }
+
+    & .bad {
+        background-color: red;
+    }
+}
