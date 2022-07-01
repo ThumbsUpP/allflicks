@@ -9,7 +9,7 @@ const MoviesList = props => {
                 id={movie.id}
                 title={movie.title}
                 cover={movie.poster_path}
-                year={movie.release_date.substring(0, 4)}
+                year={(movie.release_date || '').substring(0, 4)}
             />
         </div>
     ))

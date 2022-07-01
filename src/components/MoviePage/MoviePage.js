@@ -1,8 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import { useParams, Link} from 'react-router-dom'
 
 import useFetch from '../../hooks/useFetch'
 import { baseUrl, apiKey } from '../../constants/global'
+import FavContext from '../../store/fav-context'
 
 import styles from './MoviePage.module.scss'
 
@@ -11,6 +12,8 @@ const MoviePage = () => {
     const params = useParams()
 
     const [movieData, setMovieData] = useState([])
+
+    const ctx = useContext(FavContext)
 
     const url = `${baseUrl}/movie/${params.movieId.toString()}?${apiKey}`
     const { loading, error, sendRequest: fetchMovieData } = useFetch()
@@ -38,6 +41,14 @@ const MoviePage = () => {
     const rating = movieData.vote_average
     const isOk = rating < 7 ? styles.ok : ''
     const isBad = rating < 5 ? styles.bad : ''
+
+    const addToFavHandler = () => {
+        ctx.onAddMovie(
+            movieData.id,
+            movieData.title,
+            posterPath,
+            movieData.release_date)
+    }
 
     return <section className={styles['movie-page']}>
         {error && <p>Error: please try again later.</p>}
@@ -68,6 +79,7 @@ const MoviePage = () => {
                     <p>{movieData.overview}</p>
                     </div>
                 </div>
+                <button className={styles['watchlist-button']} onClick={addToFavHandler}>Add to watchlist</button>
             </>
         }
     </section>
