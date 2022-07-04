@@ -16,7 +16,7 @@ const App = () => {
                 <Route path='/movie' element={<MoviePage />} />
                 <Route path='/best' element={<BestMovies />} />
                 <Route path='/movie/:movieId' element={<MoviePage />} />
-                <Route path='*' element={<div>yoyoyoy</div>} />
+                <Route path='*' element={<div>Error 404</div>} />
             </Routes>
         </Suspense>
     </Layout>
