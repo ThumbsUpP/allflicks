@@ -7,6 +7,7 @@ import Layout from './components/Layout/Layout'
 import BestMovies from './components/BestMovies/BestMovies'
 
 const MoviePage = React.lazy(() => import('./components/MoviePage/MoviePage'))
+const WatchList = React.lazy(() => import('./components/Watchlist/Watchlist'))
 
 const App = () => {
     return <Layout>
@@ -16,6 +17,7 @@ const App = () => {
                 <Route path='/movie' element={<MoviePage />} />
                 <Route path='/best' element={<BestMovies />} />
                 <Route path='/movie/:movieId' element={<MoviePage />} />
+                <Route path='/watchlist' element={<WatchList />} />
                 <Route path='*' element={<div>Error 404</div>} />
             </Routes>
         </Suspense>

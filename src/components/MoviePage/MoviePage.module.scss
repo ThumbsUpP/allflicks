@@ -91,4 +91,10 @@
     & .bad {
         background-color: red;
     }
+
+    & .watchlist-button {
+        padding: 10px;
+        cursor: pointer;
+        font-weight: 600;
+    }
 }

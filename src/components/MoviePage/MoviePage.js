@@ -41,6 +41,7 @@ const MoviePage = () => {
     const rating = movieData.vote_average
     const isOk = rating < 7 ? styles.ok : ''
     const isBad = rating < 5 ? styles.bad : ''
+    const isFaved = ctx.favMovies.find(el => el.id === movieData.id) ? 'Remove from' : 'Add to'
 
     const addToFavHandler = () => {
         ctx.onAddMovie(
@@ -79,7 +80,7 @@ const MoviePage = () => {
                     <p>{movieData.overview}</p>
                     </div>
                 </div>
-                <button className={styles['watchlist-button']} onClick={addToFavHandler}>Add to watchlist</button>
+                <button className={styles['watchlist-button']} onClick={addToFavHandler}>{ isFaved } your watchlist</button>
             </>
         }
     </section>
