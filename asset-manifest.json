@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/allflicks/static/css/main.c120e988.css",
-    "main.js": "/allflicks/static/js/main.f4fc0c74.js",
+    "main.js": "/allflicks/static/js/main.33f2a0f1.js",
     "static/css/517.bdb25706.chunk.css": "/allflicks/static/css/517.bdb25706.chunk.css",
     "static/js/517.559031de.chunk.js": "/allflicks/static/js/517.559031de.chunk.js",
     "static/css/874.b5a3df4b.chunk.css": "/allflicks/static/css/874.b5a3df4b.chunk.css",
@@ -9,7 +9,7 @@
     "static/js/787.458d6672.chunk.js": "/allflicks/static/js/787.458d6672.chunk.js",
     "index.html": "/allflicks/index.html",
     "main.c120e988.css.map": "/allflicks/static/css/main.c120e988.css.map",
-    "main.f4fc0c74.js.map": "/allflicks/static/js/main.f4fc0c74.js.map",
+    "main.33f2a0f1.js.map": "/allflicks/static/js/main.33f2a0f1.js.map",
     "517.bdb25706.chunk.css.map": "/allflicks/static/css/517.bdb25706.chunk.css.map",
     "517.559031de.chunk.js.map": "/allflicks/static/js/517.559031de.chunk.js.map",
     "874.b5a3df4b.chunk.css.map": "/allflicks/static/css/874.b5a3df4b.chunk.css.map",
@@ -18,6 +18,6 @@
   },
   "entrypoints": [
     "static/css/main.c120e988.css",
-    "static/js/main.f4fc0c74.js"
+    "static/js/main.33f2a0f1.js"
   ]
 }
