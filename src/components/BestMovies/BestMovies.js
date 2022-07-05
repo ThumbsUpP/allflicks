@@ -8,15 +8,9 @@ import styles from './BestMovies.module.scss'
 
 const BestMovies = () => {
     const [moviesList, setMoviesList] = useState([])
-    const [page, setPage] = useState(1)
-    const [hasNextPage, setHasNextPage] = useState(true)
 
-    const url = `${baseUrl}/discover/movie?${apiKey}&language=en-US&sort_by=vote_average.desc&vote_count.gte=300&include_adult=false&include_video=false&page=${page.toString()}`
+    const url = `${baseUrl}/discover/movie?${apiKey}&language=en-US&sort_by=vote_average.desc&vote_count.gte=300&include_adult=false&include_video=false&page=1`
     const { loading, error, sendRequest: fetchMovies } = useFetch()
-
-    if (error) {
-        setHasNextPage(false)
-    }
 
     useEffect(() => {
         const addMovies = movies => {
@@ -28,6 +22,7 @@ const BestMovies = () => {
 
     return <section className={styles['best-movies']}>
         <h1>Best Movies</h1>
+        {loading && <p>Loading...</p>}
         {error && <p>Failed to load movies. Please try again.</p>}
         {moviesList && <MoviesSwiper movies={moviesList} />}
     </section>
