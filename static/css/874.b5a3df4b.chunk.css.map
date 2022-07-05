@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/874.b5a3df4b.chunk.css","mappings":"AAEI,+BACI","sources":["components/Watchlist/Watchlist.module.scss"],"sourcesContent":[".watchlist {\n\n    & ul {\n        justify-content: flex-start;\n    }\n}"],"names":[],"sourceRoot":""}

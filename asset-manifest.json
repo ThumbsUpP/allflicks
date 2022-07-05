@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "//stephanorgiazzi.github.io/allflicks/static/css/main.c120e988.css",
+    "main.js": "//stephanorgiazzi.github.io/allflicks/static/js/main.22ef83cf.js",
+    "static/css/517.bdb25706.chunk.css": "//stephanorgiazzi.github.io/allflicks/static/css/517.bdb25706.chunk.css",
+    "static/js/517.559031de.chunk.js": "//stephanorgiazzi.github.io/allflicks/static/js/517.559031de.chunk.js",
+    "static/css/874.b5a3df4b.chunk.css": "//stephanorgiazzi.github.io/allflicks/static/css/874.b5a3df4b.chunk.css",
+    "static/js/874.00d4c2ae.chunk.js": "//stephanorgiazzi.github.io/allflicks/static/js/874.00d4c2ae.chunk.js",
+    "static/js/787.458d6672.chunk.js": "//stephanorgiazzi.github.io/allflicks/static/js/787.458d6672.chunk.js",
+    "index.html": "//stephanorgiazzi.github.io/allflicks/index.html",
+    "main.c120e988.css.map": "//stephanorgiazzi.github.io/allflicks/static/css/main.c120e988.css.map",
+    "main.22ef83cf.js.map": "//stephanorgiazzi.github.io/allflicks/static/js/main.22ef83cf.js.map",
+    "517.bdb25706.chunk.css.map": "//stephanorgiazzi.github.io/allflicks/static/css/517.bdb25706.chunk.css.map",
+    "517.559031de.chunk.js.map": "//stephanorgiazzi.github.io/allflicks/static/js/517.559031de.chunk.js.map",
+    "874.b5a3df4b.chunk.css.map": "//stephanorgiazzi.github.io/allflicks/static/css/874.b5a3df4b.chunk.css.map",
+    "874.00d4c2ae.chunk.js.map": "//stephanorgiazzi.github.io/allflicks/static/js/874.00d4c2ae.chunk.js.map",
+    "787.458d6672.chunk.js.map": "//stephanorgiazzi.github.io/allflicks/static/js/787.458d6672.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c120e988.css",
+    "static/js/main.22ef83cf.js"
+  ]
+}
