@@ -5,6 +5,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
+    @media only screen and (max-width: 387px) {
+        justify-content: space-around;
+    }
+
     & .movie-card {
         flex: 1 0 calc(20% - 10px);
         height: 300px;

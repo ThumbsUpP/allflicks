@@ -41,6 +41,9 @@ const MoviesSwiper = props => {
                 disableOnInteraction: true,
             }}
             breakpoints={{
+                "@0.10": {
+                    slidesPerView: 1
+                },
                 "@0.30": {
                     slidesPerView: 2,
                     spaceBetween: 20
